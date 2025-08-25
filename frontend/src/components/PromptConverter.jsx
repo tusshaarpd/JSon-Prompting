@@ -78,8 +78,8 @@ const PromptConverter = () => {
       const requestData = {
         textPrompt: textPrompt.trim(),
         model: selectedModel,
-        useEmergentKey: !useOwnKey,
-        apiKey: useOwnKey ? apiKey : null
+        useEmergentKey: true,
+        apiKey: null
       };
 
       const response = await axios.post(`${API}/convert-prompt`, requestData);
