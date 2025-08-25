@@ -158,7 +158,7 @@ const PromptConverter = () => {
           <div className="inline-flex items-center gap-2 mb-4">
             <Sparkles className="h-8 w-8 text-indigo-600" />
             <h1 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Emergent Prompt
+              JSON Prompting
             </h1>
           </div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
