@@ -37,8 +37,7 @@ const PromptConverter = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [copied, setCopied] = useState(false);
   const [selectedModel, setSelectedModel] = useState('gpt-4o-mini');
-  const [useOwnKey, setUseOwnKey] = useState(false);
-  const [apiKey, setApiKey] = useState('');
+
   const [availableModels, setAvailableModels] = useState([]);
   const { toast } = useToast();
 
