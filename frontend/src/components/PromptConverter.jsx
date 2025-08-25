@@ -135,14 +135,13 @@ const PromptConverter = () => {
                 <Label className="text-sm text-gray-600">Quick Examples:</Label>
                 <div className="flex flex-wrap gap-2">
                   {examplePrompts.map((example, index) => (
-                    <Badge
+                    <button
                       key={index}
-                      variant="outline"
-                      className="cursor-pointer hover:bg-indigo-50 hover:border-indigo-300 transition-colors text-xs"
                       onClick={() => setTextPrompt(example)}
+                      className="inline-flex items-center rounded-full border border-gray-300 px-3 py-1 text-xs font-medium text-gray-700 hover:bg-indigo-50 hover:border-indigo-300 transition-colors cursor-pointer"
                     >
-                      {example.length > 30 ? example.substring(0, 30) + '...' : example}
-                    </Badge>
+                      {example.length > 35 ? example.substring(0, 35) + '...' : example}
+                    </button>
                   ))}
                 </div>
               </div>
