@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 class LLMService:
     def __init__(self):
-        self.emergent_key = os.environ.get('EMERGENT_LLL_KEY')
+        self.emergent_key = os.environ.get('EMERGENT_LLM_KEY')
         self.model_configs = {
             # OpenAI Models
             "gpt-4": {"provider": "openai", "model": "gpt-4"},
